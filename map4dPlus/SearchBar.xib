@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchBarController" customModule="map4dPlus" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="P4f-sp-N6h" id="Xfe-7g-tGK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="P4f-sp-N6h">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kzR-jk-9al">
+                    <rect key="frame" x="7" y="5" width="400" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JaO-la-fWG">
+                            <rect key="frame" x="15" y="10" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="1em-Dv-mSG"/>
+                                <constraint firstAttribute="width" constant="20" id="WB3-uH-M2Z"/>
+                            </constraints>
+                            <state key="normal" image="listView"/>
+                        </button>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Tìm kiếm ở đây" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="LEB-uJ-kH7">
+                            <rect key="frame" x="55" y="8" width="285" height="24"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAl-f3-TbX">
+                            <rect key="frame" x="369" y="12" width="16" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="72a-wm-NU4"/>
+                                <constraint firstAttribute="width" constant="16" id="yFA-2n-OgT"/>
+                            </constraints>
+                            <state key="normal" image="microphone-black-shape"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="JaO-la-fWG" firstAttribute="top" secondItem="kzR-jk-9al" secondAttribute="top" constant="10" id="5ZY-fz-6PB"/>
+                        <constraint firstItem="JaO-la-fWG" firstAttribute="leading" secondItem="kzR-jk-9al" secondAttribute="leading" constant="15" id="66V-yp-VBc"/>
+                        <constraint firstAttribute="bottom" secondItem="JaO-la-fWG" secondAttribute="bottom" constant="10" id="Au6-iG-026"/>
+                        <constraint firstItem="MAl-f3-TbX" firstAttribute="top" secondItem="kzR-jk-9al" secondAttribute="top" constant="12" id="DOC-2s-cVu"/>
+                        <constraint firstAttribute="bottom" secondItem="LEB-uJ-kH7" secondAttribute="bottom" constant="8" id="Jr0-Pi-TXb"/>
+                        <constraint firstAttribute="trailing" secondItem="LEB-uJ-kH7" secondAttribute="trailing" constant="60" id="UhS-2p-OaG"/>
+                        <constraint firstItem="LEB-uJ-kH7" firstAttribute="leading" secondItem="JaO-la-fWG" secondAttribute="trailing" constant="20" id="bSA-L3-Bvv"/>
+                        <constraint firstAttribute="bottom" secondItem="MAl-f3-TbX" secondAttribute="bottom" constant="12" id="h93-LF-wyN"/>
+                        <constraint firstAttribute="trailing" secondItem="MAl-f3-TbX" secondAttribute="trailing" constant="15" id="v5u-8u-PuU"/>
+                        <constraint firstItem="LEB-uJ-kH7" firstAttribute="top" secondItem="kzR-jk-9al" secondAttribute="top" constant="8" id="yZm-Qb-hzZ"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderView">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                            <size key="value" width="0.0" height="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="KFY-3u-P9f" firstAttribute="bottom" secondItem="kzR-jk-9al" secondAttribute="bottom" constant="5" id="IYc-xf-FGR"/>
+                <constraint firstItem="kzR-jk-9al" firstAttribute="leading" secondItem="KFY-3u-P9f" secondAttribute="leading" constant="7" id="aC0-Um-8ib"/>
+                <constraint firstItem="KFY-3u-P9f" firstAttribute="trailing" secondItem="kzR-jk-9al" secondAttribute="trailing" constant="7" id="dSg-1j-KEY"/>
+                <constraint firstItem="kzR-jk-9al" firstAttribute="top" secondItem="KFY-3u-P9f" secondAttribute="top" constant="5" id="fJ2-Rs-AQ0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="KFY-3u-P9f"/>
+            <point key="canvasLocation" x="-400.00000000000006" y="79.891304347826093"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="listView" width="128" height="128"/>
+        <image name="microphone-black-shape" width="128" height="128"/>
+    </resources>
+</document>
