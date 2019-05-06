@@ -9,7 +9,5 @@
 import Foundation
 
 protocol SearchDelegate: AnyObject {
-    
-    func OnTapBack();
 }
 

@@ -37,6 +37,5 @@ class SearchBarController: UIView {
     
     @objc func onTapInputSearch(sender : UITapGestureRecognizer) {
         delegate?.onTapSearchText()
-        //print(delegate)
     }
 }

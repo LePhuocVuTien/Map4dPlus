@@ -8,8 +8,7 @@
 
 import UIKit
 
-class SearchController: UIViewController {
-    var onSearchDelegate: SearchDelegate!;
+class SearchScreenController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

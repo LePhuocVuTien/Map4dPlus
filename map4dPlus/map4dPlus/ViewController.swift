@@ -10,9 +10,7 @@ import UIKit
 import map4dsdk
 
 class ViewController: UIViewController, SearchBarDelegate {
-    
     @IBOutlet weak var searchBar: SearchBarController!
- 
     @IBOutlet weak var mapView: MFMapView!
     
     override func viewDidLoad() {
@@ -23,11 +21,10 @@ class ViewController: UIViewController, SearchBarDelegate {
 
     
     func onTapSearchText() {
-//        print("DM")
-//        let storyboard = UIStoryboard(name: "InputSearch", bundle: nil)
-//        let showItemNavController = storyboard.instantiateViewController(withIdentifier: "InputSearchController") as! InputSearchController
-//        // Set the properties in your showItemVC
-//        present(showItemNavController, animated: true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
+        let storyboard = UIStoryboard(name: "SearchScreen", bundle: nil)
+        let showItemNavController = storyboard.instantiateViewController(withIdentifier: "SearchScreen") as! SearchScreenController
+        present(showItemNavController, animated: true, completion: nil)
     }
     
 }

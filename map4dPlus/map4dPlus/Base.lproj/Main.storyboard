@@ -81,7 +81,7 @@
                     </view>
                     <connections>
                         <outlet property="mapView" destination="AzC-t0-7LY" id="835-aB-SOz"/>
-                        <outlet property="searchBar" destination="zGX-JE-Dzw" id="mSa-Vc-2hh"/>
+                        <outlet property="searchBar" destination="zGX-JE-Dzw" id="HaL-Jl-Tif"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

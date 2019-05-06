@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Search Controller-->
+        <!--Search Screen Controller-->
         <scene sceneID="KB9-Nz-KkD">
             <objects>
-                <viewController id="acF-Ck-Kc4" customClass="SearchController" customModule="map4dPlus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchScreen" id="acF-Ck-Kc4" customClass="SearchScreenController" customModule="map4dPlus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i8n-ul-MPG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
