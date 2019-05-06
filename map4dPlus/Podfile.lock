@@ -1,20 +1,16 @@
 PODS:
-  - Alamofire (5.0.0-beta.6)
   - map4dsdk (1.1.0)
 
 DEPENDENCIES:
-  - Alamofire (~> 5.0.0-beta.5)
   - map4dsdk
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - Alamofire
     - map4dsdk
 
 SPEC CHECKSUMS:
-  Alamofire: cd08a4402bd12cacd0c66f23fb12fec8d6b965e4
   map4dsdk: 42700039d225e747f8d4cc67acb8b702fbbd6bd3
 
-PODFILE CHECKSUM: 4228163b249019f829d4faddee1af3ea1658b73c
+PODFILE CHECKSUM: a33e5ab5005b4b07ae7c9081cfa1c46d8a0eee6e
 
 COCOAPODS: 1.6.1
