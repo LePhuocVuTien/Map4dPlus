@@ -9,8 +9,10 @@
 import UIKit
 
 class SearchBarController: UIView {
-    
+   
     @IBOutlet var contentView: UIView!
+    @IBOutlet weak var inputSearchLabel: UITextField!
+    weak var delegate: SearchBarDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -27,6 +29,14 @@ class SearchBarController: UIView {
         addSubview(contentView)
         contentView.frame = self.bounds
         
+        let gusture = UITapGestureRecognizer(target: self, action: #selector(onTapInputSearch))
+        inputSearchLabel.addGestureRecognizer(gusture)
+        inputSearchLabel.isUserInteractionEnabled = true
         
+    }
+    
+    @objc func onTapInputSearch(sender : UITapGestureRecognizer) {
+        delegate?.onTapSearchText()
+        //print(delegate)
     }
 }

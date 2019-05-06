@@ -10,17 +10,15 @@ import UIKit
 
 extension UIView {
     
-//    @IBInspectable var borderView: CGFloat  {
-//        get {
-//            return self.layer.borderWidth
-//        }
-//
-//        set {
-//            self.layer.borderWidth = newValue
-//            self.layer.cornerRadius = 4.0
-//            self.layer.borderColor = UIColor(displayP3Red: 0.0, green: 0.0, blue: 0.0, alpha: 0.4).cgColor
-//        }
-//    }
+    @IBInspectable var cornerRadius: CGFloat  {
+        get {
+            return self.layer.cornerRadius
+        }
+
+        set {
+            self.layer.cornerRadius = newValue
+        }
+    }
     
 //    @IBInspectable var shadow: UIColor? {
 //        get {
@@ -50,7 +48,6 @@ extension UIView {
             self.layer.shadowOffset = newValue
             self.layer.shadowOpacity = 0.5
             self.layer.shadowRadius = 0.5
-            self.layer.cornerRadius = 5.0
             self.layer.shadowColor = UIColor(displayP3Red: 0.0, green: 0.0, blue: 0.0, alpha: 0.5).cgColor
         }
     }

@@ -9,16 +9,26 @@
 import UIKit
 import map4dsdk
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, SearchBarDelegate {
+    
+    @IBOutlet weak var searchBar: SearchBarController!
+ 
     @IBOutlet weak var mapView: MFMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        searchBar.delegate = self;
         mapView.setMyLocationEnabled(true)
     }
 
-
+    
+    func onTapSearchText() {
+//        print("DM")
+//        let storyboard = UIStoryboard(name: "InputSearch", bundle: nil)
+//        let showItemNavController = storyboard.instantiateViewController(withIdentifier: "InputSearchController") as! InputSearchController
+//        // Set the properties in your showItemVC
+//        present(showItemNavController, animated: true, completion: nil)
+    }
+    
 }
 

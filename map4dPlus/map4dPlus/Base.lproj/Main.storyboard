@@ -62,7 +62,6 @@
                             <constraint firstAttribute="trailing" secondItem="5su-Is-9rj" secondAttribute="trailing" id="LbI-AW-QoE"/>
                             <constraint firstItem="dBu-mD-f5F" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Qsm-UL-4G0"/>
                             <constraint firstItem="27b-i8-tJn" firstAttribute="top" secondItem="dBu-mD-f5F" secondAttribute="bottom" id="RcK-9H-x93"/>
-                            <constraint firstItem="zGX-JE-Dzw" firstAttribute="top" secondItem="5su-Is-9rj" secondAttribute="bottom" id="TNs-h7-HAi"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="27b-i8-tJn" secondAttribute="bottom" id="XTP-kY-PG3"/>
                             <constraint firstItem="zGX-JE-Dzw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Xgo-9O-EgP"/>
                             <constraint firstItem="27b-i8-tJn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bE8-fs-mT2"/>
@@ -82,6 +81,7 @@
                     </view>
                     <connections>
                         <outlet property="mapView" destination="AzC-t0-7LY" id="835-aB-SOz"/>
+                        <outlet property="searchBar" destination="zGX-JE-Dzw" id="mSa-Vc-2hh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
