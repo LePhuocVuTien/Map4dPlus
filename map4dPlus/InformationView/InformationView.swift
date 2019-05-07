@@ -8,7 +8,7 @@
 
 import UIKit
 
-class InformationController: UIView {
+class InformationView: UIView {
 
     @IBOutlet var contentView: UIView!
     

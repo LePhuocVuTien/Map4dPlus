@@ -11,7 +11,7 @@ import map4dsdk
 
 class ViewController: UIViewController, SearchBarDelegate {
     @IBOutlet weak var searchBar: SearchBarController!
-    @IBOutlet weak var informationView: InformationController!
+    
     
     
     @IBOutlet weak var mapView: MFMapView!
@@ -21,7 +21,6 @@ class ViewController: UIViewController, SearchBarDelegate {
         searchBar.delegate = self;
         mapView.setMyLocationEnabled(true)
         mapView.enable3dMode(true)
-        print(informationView.frame)
         print("Search bar:")
         print(searchBar.frame)
     }
