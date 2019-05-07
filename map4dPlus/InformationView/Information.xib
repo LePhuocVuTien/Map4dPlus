@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -18,7 +19,7 @@
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="nsS-zH-JTy">
             <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wmI-Jh-oWW">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
@@ -37,19 +38,19 @@
                             </userDefinedRuntimeAttributes>
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Khám Phá Đà Nẵng" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4X-T3-0WU">
-                            <rect key="frame" x="129" y="17.5" width="156.5" height="21.5"/>
+                            <rect key="frame" x="129" y="17.333333333333329" width="156.33333333333337" height="21.666666666666671"/>
                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="C7G-HK-WrT">
-                            <rect key="frame" x="27" y="54" width="360.5" height="66"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="C7G-HK-WrT">
+                            <rect key="frame" x="64.666666666666686" y="54" width="285" height="66"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ufm-g5-lCQ">
                                     <rect key="frame" x="0.0" y="0.0" width="60" height="66"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nhà hàng" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dOj-NI-cIV">
-                                            <rect key="frame" x="2.5" y="45" width="54.5" height="14.5"/>
+                                            <rect key="frame" x="2.6666666666666572" y="45" width="54.333333333333336" height="14.333333333333336"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -65,6 +66,7 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
+                                        <constraint firstAttribute="width" constant="60" id="1af-Nq-CAl"/>
                                         <constraint firstItem="qwQ-kV-vfa" firstAttribute="leading" secondItem="Ufm-g5-lCQ" secondAttribute="leading" constant="10" id="3Hd-cO-60j"/>
                                         <constraint firstItem="dOj-NI-cIV" firstAttribute="top" secondItem="qwQ-kV-vfa" secondAttribute="bottom" constant="5" id="ZXE-9q-t8q"/>
                                         <constraint firstItem="dOj-NI-cIV" firstAttribute="centerX" secondItem="Ufm-g5-lCQ" secondAttribute="centerX" id="j03-4T-VWG"/>
@@ -72,7 +74,7 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4lM-qL-DGu">
-                                    <rect key="frame" x="100" y="0.0" width="60" height="66"/>
+                                    <rect key="frame" x="74.999999999999986" y="0.0" width="60.000000000000014" height="66"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4WA-FH-cwe">
                                             <rect key="frame" x="10" y="0.0" width="40" height="40"/>
@@ -83,7 +85,7 @@
                                             <state key="normal" image="red_bar_icon-icons.com_59494"/>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quán cà phê" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i0t-HB-U62">
-                                            <rect key="frame" x="-6" y="45" width="71.5" height="14.5"/>
+                                            <rect key="frame" x="-5.6666666666666572" y="45" width="71.333333333333329" height="14.333333333333336"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -91,6 +93,7 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
+                                        <constraint firstAttribute="width" constant="60" id="1Sj-hs-eRN"/>
                                         <constraint firstItem="4WA-FH-cwe" firstAttribute="centerX" secondItem="4lM-qL-DGu" secondAttribute="centerX" id="Lot-kc-2d6"/>
                                         <constraint firstItem="i0t-HB-U62" firstAttribute="top" secondItem="4WA-FH-cwe" secondAttribute="bottom" constant="5" id="YKA-5Z-JOc"/>
                                         <constraint firstItem="4WA-FH-cwe" firstAttribute="top" secondItem="4lM-qL-DGu" secondAttribute="top" id="dal-Jw-Zrm"/>
@@ -98,7 +101,7 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XD1-h8-SK4">
-                                    <rect key="frame" x="200" y="0.0" width="60" height="66"/>
+                                    <rect key="frame" x="150" y="0.0" width="60" height="66"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQC-Kg-XPX">
                                             <rect key="frame" x="10" y="0.0" width="40" height="40"/>
@@ -109,7 +112,7 @@
                                             <state key="normal" image="iconfinder_Map_512907"/>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Địa Danh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6R7-VL-3mH">
-                                            <rect key="frame" x="4" y="45" width="51.5" height="14.5"/>
+                                            <rect key="frame" x="4.3333333333333428" y="45" width="51.333333333333336" height="14.333333333333336"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -120,11 +123,12 @@
                                         <constraint firstItem="WQC-Kg-XPX" firstAttribute="top" secondItem="XD1-h8-SK4" secondAttribute="top" id="6dt-f9-jDU"/>
                                         <constraint firstItem="6R7-VL-3mH" firstAttribute="centerX" secondItem="XD1-h8-SK4" secondAttribute="centerX" id="H8i-ZH-6E2"/>
                                         <constraint firstItem="6R7-VL-3mH" firstAttribute="top" secondItem="WQC-Kg-XPX" secondAttribute="bottom" constant="5" id="IOc-4s-TZd"/>
+                                        <constraint firstAttribute="width" constant="60" id="LYR-lk-dLs"/>
                                         <constraint firstItem="WQC-Kg-XPX" firstAttribute="centerX" secondItem="XD1-h8-SK4" secondAttribute="centerX" id="WPd-5R-yzY"/>
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ee2-Cr-iwH">
-                                    <rect key="frame" x="300" y="0.0" width="60.5" height="66"/>
+                                    <rect key="frame" x="225" y="0.0" width="60" height="66"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ih-6d-U2H">
                                             <rect key="frame" x="10" y="0.0" width="40" height="40"/>
@@ -135,7 +139,7 @@
                                             <state key="normal" image="iconfinder_chat_1055095 (1)"/>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thêm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6WP-lI-Wca">
-                                            <rect key="frame" x="14" y="45" width="32.5" height="14.5"/>
+                                            <rect key="frame" x="13.666666666666629" y="45" width="32.333333333333336" height="14.333333333333336"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -147,28 +151,23 @@
                                         <constraint firstItem="6WP-lI-Wca" firstAttribute="top" secondItem="0ih-6d-U2H" secondAttribute="bottom" constant="5" id="HsI-Fw-CyB"/>
                                         <constraint firstItem="0ih-6d-U2H" firstAttribute="centerX" secondItem="ee2-Cr-iwH" secondAttribute="centerX" id="QaV-G8-STR"/>
                                         <constraint firstItem="6WP-lI-Wca" firstAttribute="centerX" secondItem="ee2-Cr-iwH" secondAttribute="centerX" id="UgD-S9-XTj"/>
-                                        <constraint firstItem="6WP-lI-Wca" firstAttribute="leading" secondItem="ee2-Cr-iwH" secondAttribute="leading" constant="14" id="VaC-aQ-8gc"/>
+                                        <constraint firstAttribute="width" constant="60" id="poT-aB-xRm"/>
                                     </constraints>
                                 </view>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <constraints>
-                                <constraint firstItem="ee2-Cr-iwH" firstAttribute="leading" secondItem="C7G-HK-WrT" secondAttribute="leading" constant="300" id="pHJ-mz-g2H"/>
-                                <constraint firstItem="XD1-h8-SK4" firstAttribute="leading" secondItem="C7G-HK-WrT" secondAttribute="leading" constant="200" id="t1L-Fp-4Ye"/>
-                                <constraint firstItem="4lM-qL-DGu" firstAttribute="leading" secondItem="C7G-HK-WrT" secondAttribute="leading" constant="100" id="v17-GE-byJ"/>
-                            </constraints>
                         </stackView>
-                        <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="zHl-EW-yIa">
+                        <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="zHl-EW-yIa">
                             <rect key="frame" x="0.0" y="120" width="414" height="80"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0sg-Et-YiG">
-                                    <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="102" height="80"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="QuanBar" translatesAutoresizingMaskIntoConstraints="NO" id="x20-Pf-iCK">
-                                            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="102" height="80"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quán bar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uui-G5-QYs">
-                                            <rect key="frame" x="6" y="59.5" width="68" height="14.5"/>
+                                            <rect key="frame" x="6" y="59.666666666666664" width="90" height="14.333333333333336"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -191,13 +190,13 @@
                                     </userDefinedRuntimeAttributes>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vPj-kt-HkS">
-                                    <rect key="frame" x="110" y="0.0" width="80" height="80"/>
+                                    <rect key="frame" x="110" y="0.0" width="102" height="80"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restaurantmanypeople" translatesAutoresizingMaskIntoConstraints="NO" id="2xH-mf-aYX">
-                                            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="102" height="80"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bữa tối dánh cho nhóm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHh-hI-Zzx">
-                                            <rect key="frame" x="6" y="59.5" width="68" height="14.5"/>
+                                            <rect key="frame" x="6" y="59.666666666666664" width="90" height="14.333333333333336"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -220,13 +219,13 @@
                                     </userDefinedRuntimeAttributes>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Fk-jD-Q5U">
-                                    <rect key="frame" x="220" y="0.0" width="80" height="80"/>
+                                    <rect key="frame" x="220" y="0.0" width="102" height="80"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restaurant" translatesAutoresizingMaskIntoConstraints="NO" id="jH9-wd-eHb">
-                                            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="102" height="80"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nhà hàng" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C9t-SH-wnw">
-                                            <rect key="frame" x="6" y="57" width="68" height="17"/>
+                                            <rect key="frame" x="6" y="57" width="90" height="17"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -304,14 +303,14 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="wmI-Jh-oWW" firstAttribute="top" secondItem="nsS-zH-JTy" secondAttribute="top" id="1bG-lZ-z6z"/>
                 <constraint firstItem="wmI-Jh-oWW" firstAttribute="trailing" secondItem="d6i-gP-352" secondAttribute="trailing" id="FWO-5a-kKe"/>
-                <constraint firstItem="wmI-Jh-oWW" firstAttribute="top" secondItem="nsS-zH-JTy" secondAttribute="top" id="GNS-ag-8VU"/>
                 <constraint firstItem="wmI-Jh-oWW" firstAttribute="leading" secondItem="d6i-gP-352" secondAttribute="leading" id="ti2-EY-7b0"/>
-                <constraint firstAttribute="bottom" secondItem="wmI-Jh-oWW" secondAttribute="bottom" id="ww6-JI-xgQ"/>
+                <constraint firstAttribute="bottom" secondItem="wmI-Jh-oWW" secondAttribute="bottom" id="xZt-f6-Ojk"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="d6i-gP-352"/>
-            <point key="canvasLocation" x="250.72463768115944" y="-352.23214285714283"/>
+            <point key="canvasLocation" x="249.375" y="-352.81690140845069"/>
         </view>
     </objects>
     <resources>

@@ -21,6 +21,9 @@ class ViewController: UIViewController, SearchBarDelegate {
         searchBar.delegate = self;
         mapView.setMyLocationEnabled(true)
         mapView.enable3dMode(true)
+        print(informationView.frame)
+        print("Search bar:")
+        print(searchBar.frame)
     }
 
     
