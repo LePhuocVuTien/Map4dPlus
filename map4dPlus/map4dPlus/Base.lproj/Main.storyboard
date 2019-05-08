@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="779"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zGX-JE-Dzw" customClass="SearchBarController" customModule="map4dPlus" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zGX-JE-Dzw" customClass="SearchBarView" customModule="map4dPlus" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="20" width="768" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>

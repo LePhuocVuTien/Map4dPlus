@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchBarController" customModule="map4dPlus" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchBarView" customModule="map4dPlus" customModuleProvider="target">
             <connections>
                 <outlet property="contentView" destination="P4f-sp-N6h" id="Xfe-7g-tGK"/>
                 <outlet property="inputSearchLabel" destination="LEB-uJ-kH7" id="7B2-15-IaJ"/>

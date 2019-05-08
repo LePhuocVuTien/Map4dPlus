@@ -10,7 +10,7 @@ import UIKit
 import map4dsdk
 
 class ViewController: UIViewController, SearchBarDelegate {
-    @IBOutlet weak var searchBar: SearchBarController!
+    @IBOutlet weak var searchBar: SearchBarView!
     
     
     

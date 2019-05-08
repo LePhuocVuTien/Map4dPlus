@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SearchBarController: UIView {
+class SearchBarView: UIView {
    
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var inputSearchLabel: UITextField!

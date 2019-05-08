@@ -10,7 +10,13 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InputSearchController" customModule="map4dPlus" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InputSearchController" customModule="map4dPlus" customModuleProvider="target">
+            <connections>
+                <outlet property="contenView" destination="fb9-c9-BGx" id="Lyg-T4-HR6"/>
+                <outlet property="inputButton" destination="vJd-WN-ug0" id="YXz-8v-xx5"/>
+                <outlet property="searchText" destination="12C-67-9aZ" id="77S-lz-bgH"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="fb9-c9-BGx">
             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
@@ -26,6 +32,9 @@
                                 <constraint firstAttribute="height" constant="20" id="sYP-Qo-vxN"/>
                             </constraints>
                             <state key="normal" image="icons8-left-filled-100"/>
+                            <connections>
+                                <action selector="onBack:" destination="-1" eventType="touchUpInside" id="6e9-kY-jgz"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vJd-WN-ug0">
                             <rect key="frame" x="374" y="12" width="16" height="16"/>
@@ -34,23 +43,29 @@
                                 <constraint firstAttribute="height" constant="16" id="gD9-k7-mDH"/>
                             </constraints>
                             <state key="normal" image="microphone-black-shape"/>
+                            <connections>
+                                <action selector="inputText:" destination="-1" eventType="touchUpInside" id="QDw-MY-J6f"/>
+                            </connections>
                         </button>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Search Here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="12C-67-9aZ">
-                            <rect key="frame" x="55" y="5" width="285" height="30"/>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tìm kiếm ở đây" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="12C-67-9aZ">
+                            <rect key="frame" x="55" y="0.0" width="285" height="40"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="30" id="DCk-yY-ggB"/>
+                                <constraint firstAttribute="height" constant="40" id="DCk-yY-ggB"/>
                             </constraints>
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <action selector="changeSearchText:" destination="-1" eventType="editingChanged" id="zRa-sI-zwN"/>
+                            </connections>
                         </textField>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="12C-67-9aZ" firstAttribute="leading" secondItem="suy-FQ-cnM" secondAttribute="trailing" constant="20" id="5UA-bf-emy"/>
-                        <constraint firstItem="12C-67-9aZ" firstAttribute="top" secondItem="w0V-vD-vPc" secondAttribute="top" constant="5" id="69e-cn-yb0"/>
+                        <constraint firstItem="12C-67-9aZ" firstAttribute="top" secondItem="w0V-vD-vPc" secondAttribute="top" id="69e-cn-yb0"/>
                         <constraint firstAttribute="trailing" secondItem="12C-67-9aZ" secondAttribute="trailing" constant="60" id="9U1-Dw-k6j"/>
-                        <constraint firstAttribute="bottom" secondItem="12C-67-9aZ" secondAttribute="bottom" constant="5" id="Gki-HT-x5A"/>
+                        <constraint firstAttribute="bottom" secondItem="12C-67-9aZ" secondAttribute="bottom" id="Gki-HT-x5A"/>
                         <constraint firstAttribute="bottom" secondItem="suy-FQ-cnM" secondAttribute="bottom" constant="10" id="f6o-t7-QzA"/>
                         <constraint firstItem="suy-FQ-cnM" firstAttribute="leading" secondItem="w0V-vD-vPc" secondAttribute="leading" constant="15" id="i64-sJ-cZe"/>
                         <constraint firstAttribute="bottom" secondItem="vJd-WN-ug0" secondAttribute="bottom" constant="12" id="lLH-Xj-Y0V"/>
