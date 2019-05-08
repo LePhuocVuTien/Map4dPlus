@@ -11,13 +11,15 @@
 		0458CC7F227D44880079C788 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0458CC7E227D44880079C788 /* ViewController.swift */; };
 		0458CC82227D44880079C788 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0458CC80227D44880079C788 /* Main.storyboard */; };
 		0458CC87227D44880079C788 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0458CC85227D44880079C788 /* LaunchScreen.storyboard */; };
+		0467C91622817A200016308B /* MenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0467C91522817A200016308B /* MenuView.xib */; };
+		0467C91822817A2F0016308B /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0467C91722817A2F0016308B /* MenuView.swift */; };
 		0475BFEB227D93CE00E4D290 /* SearchBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0475BFEA227D93CE00E4D290 /* SearchBarController.swift */; };
 		0475BFED227D974900E4D290 /* SearchBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0475BFEC227D974900E4D290 /* SearchBar.xib */; };
 		0475BFEF227D9D1A00E4D290 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0475BFEE227D9D1A00E4D290 /* Assets.xcassets */; };
 		0494D48B22801674003A22F6 /* SearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0494D48A22801674003A22F6 /* SearchBarDelegate.swift */; };
 		0494D48D228023B5003A22F6 /* SearchScreenDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0494D48C228023B5003A22F6 /* SearchScreenDelegate.swift */; };
-		0494D496228039A1003A22F6 /* Information.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0494D495228039A1003A22F6 /* Information.xib */; };
-		0494D498228039B1003A22F6 /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0494D497228039B1003A22F6 /* InformationView.swift */; };
+		0494D496228039A1003A22F6 /* DiscoveryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0494D495228039A1003A22F6 /* DiscoveryView.xib */; };
+		0494D498228039B1003A22F6 /* DiscoveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0494D497228039B1003A22F6 /* DiscoveryView.swift */; };
 		04B69C11227FCAD0007386EB /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B69C10227FCAD0007386EB /* Extension+View.swift */; };
 		04B69C14227FE42B007386EB /* InputSearch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B69C13227FE42B007386EB /* InputSearch.xib */; };
 		04B69C16227FE446007386EB /* SearchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B69C15227FE446007386EB /* SearchScreen.storyboard */; };
@@ -36,13 +38,15 @@
 		0458CC81227D44880079C788 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0458CC86227D44880079C788 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0458CC88227D44880079C788 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0467C91522817A200016308B /* MenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuView.xib; sourceTree = "<group>"; };
+		0467C91722817A2F0016308B /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		0475BFEA227D93CE00E4D290 /* SearchBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarController.swift; sourceTree = "<group>"; };
 		0475BFEC227D974900E4D290 /* SearchBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchBar.xib; sourceTree = "<group>"; };
 		0475BFEE227D9D1A00E4D290 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../../ProjectIOTLink/map4d-ios/map4d/map4d/Assets.xcassets"; sourceTree = "<group>"; };
 		0494D48A22801674003A22F6 /* SearchBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarDelegate.swift; sourceTree = "<group>"; };
 		0494D48C228023B5003A22F6 /* SearchScreenDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreenDelegate.swift; sourceTree = "<group>"; };
-		0494D495228039A1003A22F6 /* Information.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Information.xib; sourceTree = "<group>"; };
-		0494D497228039B1003A22F6 /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
+		0494D495228039A1003A22F6 /* DiscoveryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscoveryView.xib; sourceTree = "<group>"; };
+		0494D497228039B1003A22F6 /* DiscoveryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryView.swift; sourceTree = "<group>"; };
 		04B69C10227FCAD0007386EB /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
 		04B69C13227FE42B007386EB /* InputSearch.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputSearch.xib; sourceTree = "<group>"; };
 		04B69C15227FE446007386EB /* SearchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchScreen.storyboard; sourceTree = "<group>"; };
@@ -103,11 +107,21 @@
 		0458CC8E227D4EB00079C788 /* MainScreen */ = {
 			isa = PBXGroup;
 			children = (
-				0494D4942280398D003A22F6 /* InformationView */,
+				0467C91422817A070016308B /* Menu */,
+				0494D4942280398D003A22F6 /* Discovery */,
 				0494D49322803960003A22F6 /* SearchBar */,
 			);
 			name = MainScreen;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		0467C91422817A070016308B /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				0467C91522817A200016308B /* MenuView.xib */,
+				0467C91722817A2F0016308B /* MenuView.swift */,
+			);
+			name = Menu;
 			sourceTree = "<group>";
 		};
 		0475BFE5227D901700E4D290 /* Extensions */ = {
@@ -128,13 +142,13 @@
 			name = SearchBar;
 			sourceTree = "<group>";
 		};
-		0494D4942280398D003A22F6 /* InformationView */ = {
+		0494D4942280398D003A22F6 /* Discovery */ = {
 			isa = PBXGroup;
 			children = (
-				0494D495228039A1003A22F6 /* Information.xib */,
-				0494D497228039B1003A22F6 /* InformationView.swift */,
+				0494D495228039A1003A22F6 /* DiscoveryView.xib */,
+				0494D497228039B1003A22F6 /* DiscoveryView.swift */,
 			);
-			path = InformationView;
+			path = Discovery;
 			sourceTree = "<group>";
 		};
 		04B69C12227FE40D007386EB /* InputSearch */ = {
@@ -250,9 +264,10 @@
 				04B69C16227FE446007386EB /* SearchScreen.storyboard in Resources */,
 				0458CC87227D44880079C788 /* LaunchScreen.storyboard in Resources */,
 				0475BFED227D974900E4D290 /* SearchBar.xib in Resources */,
+				0467C91622817A200016308B /* MenuView.xib in Resources */,
 				04B69C20227FE9BC007386EB /* CellAdress.xib in Resources */,
 				0475BFEF227D9D1A00E4D290 /* Assets.xcassets in Resources */,
-				0494D496228039A1003A22F6 /* Information.xib in Resources */,
+				0494D496228039A1003A22F6 /* DiscoveryView.xib in Resources */,
 				0458CC82227D44880079C788 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,9 +348,10 @@
 				04B69C18227FE460007386EB /* InputSearchController.swift in Sources */,
 				0494D48D228023B5003A22F6 /* SearchScreenDelegate.swift in Sources */,
 				04B69C1B227FE955007386EB /* SearchScreenController.swift in Sources */,
-				0494D498228039B1003A22F6 /* InformationView.swift in Sources */,
+				0494D498228039B1003A22F6 /* DiscoveryView.swift in Sources */,
 				04B69C1E227FE99B007386EB /* CellAdressController.swift in Sources */,
 				0458CC7F227D44880079C788 /* ViewController.swift in Sources */,
+				0467C91822817A2F0016308B /* MenuView.swift in Sources */,
 				0458CC7D227D44880079C788 /* AppDelegate.swift in Sources */,
 				04B69C11227FCAD0007386EB /* Extension+View.swift in Sources */,
 				0475BFEB227D93CE00E4D290 /* SearchBarController.swift in Sources */,

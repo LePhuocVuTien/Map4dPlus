@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuView" customModule="map4dPlus" customModuleProvider="target">
+            <connections>
+                <outlet property="menuView" destination="rDW-03-EsB" id="g4g-5g-9a8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="rDW-03-EsB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="45"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X26-uL-D0Q">
+                    <rect key="frame" x="90" y="0.0" width="234" height="45"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gwk-JE-Mjb">
+                            <rect key="frame" x="0.0" y="0.0" width="117" height="45"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Khám Phá" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4y-6k-ozR">
+                                    <rect key="frame" x="0.0" y="29" width="117" height="15"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="15" id="5yq-5f-ujt"/>
+                                        <constraint firstAttribute="width" constant="117" id="EhA-uL-AKn"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="discoveryBlue" translatesAutoresizingMaskIntoConstraints="NO" id="J9X-m9-Yyo">
+                                    <rect key="frame" x="48.5" y="5" width="20" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="JMN-Vc-76v"/>
+                                        <constraint firstAttribute="width" constant="20" id="Qth-PT-vEZ"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="117" id="Bnl-gX-NrD"/>
+                                <constraint firstAttribute="centerX" secondItem="J9X-m9-Yyo" secondAttribute="centerX" id="Eov-fG-BkP"/>
+                                <constraint firstAttribute="height" constant="45" id="RVc-dc-Wb3"/>
+                                <constraint firstItem="J9X-m9-Yyo" firstAttribute="top" secondItem="Gwk-JE-Mjb" secondAttribute="top" constant="5" id="VHO-3D-rnc"/>
+                                <constraint firstItem="q4y-6k-ozR" firstAttribute="centerX" secondItem="Gwk-JE-Mjb" secondAttribute="centerX" id="ZcA-De-KMp"/>
+                                <constraint firstItem="q4y-6k-ozR" firstAttribute="top" secondItem="J9X-m9-Yyo" secondAttribute="bottom" constant="4" id="mbd-H8-xQD"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ymu-jd-s06">
+                            <rect key="frame" x="117" y="0.0" width="117" height="45"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="working" translatesAutoresizingMaskIntoConstraints="NO" id="gpp-WM-AP5">
+                                    <rect key="frame" x="48.5" y="5" width="20" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="0zr-Sa-YAa"/>
+                                        <constraint firstAttribute="width" constant="20" id="VqF-kV-SCA"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đi làm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDx-GP-Oc4">
+                                    <rect key="frame" x="0.0" y="29" width="117" height="15"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="117" id="Qof-Lm-kZw"/>
+                                        <constraint firstAttribute="height" constant="15" id="o1Q-gS-adb"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="117" id="Bfx-Tz-XO3"/>
+                                <constraint firstItem="IDx-GP-Oc4" firstAttribute="centerX" secondItem="Ymu-jd-s06" secondAttribute="centerX" id="Za9-hQ-Op7"/>
+                                <constraint firstItem="gpp-WM-AP5" firstAttribute="centerX" secondItem="Ymu-jd-s06" secondAttribute="centerX" id="gZe-zA-dah"/>
+                                <constraint firstItem="IDx-GP-Oc4" firstAttribute="top" secondItem="gpp-WM-AP5" secondAttribute="bottom" constant="4" id="iHO-mt-6m9"/>
+                                <constraint firstAttribute="height" constant="45" id="nm9-SC-yJS"/>
+                                <constraint firstItem="gpp-WM-AP5" firstAttribute="top" secondItem="Ymu-jd-s06" secondAttribute="top" constant="5" id="vZe-rK-Xdf"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="234" id="1TU-7X-2Dg"/>
+                        <constraint firstItem="Gwk-JE-Mjb" firstAttribute="top" secondItem="Ymu-jd-s06" secondAttribute="top" id="9ff-ib-h2w"/>
+                        <constraint firstItem="Ymu-jd-s06" firstAttribute="leading" secondItem="Gwk-JE-Mjb" secondAttribute="trailing" id="HVy-R1-HpI"/>
+                        <constraint firstItem="Gwk-JE-Mjb" firstAttribute="top" secondItem="X26-uL-D0Q" secondAttribute="top" id="fjT-R9-9fg"/>
+                        <constraint firstItem="Gwk-JE-Mjb" firstAttribute="leading" secondItem="X26-uL-D0Q" secondAttribute="leading" id="ja7-GH-seJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="X26-uL-D0Q" firstAttribute="bottom" secondItem="rDW-03-EsB" secondAttribute="bottom" id="6Fp-Rb-XvU"/>
+                <constraint firstItem="X26-uL-D0Q" firstAttribute="centerX" secondItem="rDW-03-EsB" secondAttribute="centerX" id="MWf-hF-DlO"/>
+                <constraint firstItem="X26-uL-D0Q" firstAttribute="top" secondItem="rDW-03-EsB" secondAttribute="top" id="YY3-02-kvS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Sh1-T6-5SZ"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                    <size key="value" width="0.0" height="-0.69999999999999996"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="108.69565217391305" y="-191.18303571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="discoveryBlue" width="128" height="128"/>
+        <image name="working" width="128" height="128"/>
+    </resources>
+</document>

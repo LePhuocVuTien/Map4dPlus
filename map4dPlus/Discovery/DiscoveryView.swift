@@ -8,7 +8,7 @@
 
 import UIKit
 
-class InformationView: UIView {
+class DiscoveryView: UIView {
 
     @IBOutlet var contentView: UIView!
     
@@ -23,7 +23,7 @@ class InformationView: UIView {
     }
 
     func setupView() {
-        Bundle.main.loadNibNamed("Information", owner: self, options: nil)
+        Bundle.main.loadNibNamed("DiscoveryView", owner: self, options: nil)
         addSubview(contentView)
         contentView.frame = self.bounds
     }
