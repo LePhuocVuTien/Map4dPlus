@@ -11,4 +11,5 @@ import Foundation
 protocol SearchBarDelegate: AnyObject {
 
     func onTapSearchText();
+    func showAlert(message: String);
 }

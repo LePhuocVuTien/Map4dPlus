@@ -33,7 +33,7 @@
                             <state key="normal" image="listView"/>
                         </button>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Tìm kiếm ở đây" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="LEB-uJ-kH7">
-                            <rect key="frame" x="55" y="8" width="285" height="24"/>
+                            <rect key="frame" x="55" y="0.0" width="285" height="40"/>
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
@@ -45,6 +45,9 @@
                                 <constraint firstAttribute="width" constant="16" id="yFA-2n-OgT"/>
                             </constraints>
                             <state key="normal" image="microphone-black-shape"/>
+                            <connections>
+                                <action selector="opTapMicroPhone:" destination="-1" eventType="touchUpInside" id="gSq-ak-7vX"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -53,12 +56,12 @@
                         <constraint firstItem="JaO-la-fWG" firstAttribute="leading" secondItem="kzR-jk-9al" secondAttribute="leading" constant="15" id="66V-yp-VBc"/>
                         <constraint firstAttribute="bottom" secondItem="JaO-la-fWG" secondAttribute="bottom" constant="10" id="Au6-iG-026"/>
                         <constraint firstItem="MAl-f3-TbX" firstAttribute="top" secondItem="kzR-jk-9al" secondAttribute="top" constant="12" id="DOC-2s-cVu"/>
-                        <constraint firstAttribute="bottom" secondItem="LEB-uJ-kH7" secondAttribute="bottom" constant="8" id="Jr0-Pi-TXb"/>
+                        <constraint firstAttribute="bottom" secondItem="LEB-uJ-kH7" secondAttribute="bottom" id="Jr0-Pi-TXb"/>
                         <constraint firstAttribute="trailing" secondItem="LEB-uJ-kH7" secondAttribute="trailing" constant="60" id="UhS-2p-OaG"/>
                         <constraint firstItem="LEB-uJ-kH7" firstAttribute="leading" secondItem="JaO-la-fWG" secondAttribute="trailing" constant="20" id="bSA-L3-Bvv"/>
                         <constraint firstAttribute="bottom" secondItem="MAl-f3-TbX" secondAttribute="bottom" constant="12" id="h93-LF-wyN"/>
                         <constraint firstAttribute="trailing" secondItem="MAl-f3-TbX" secondAttribute="trailing" constant="15" id="v5u-8u-PuU"/>
-                        <constraint firstItem="LEB-uJ-kH7" firstAttribute="top" secondItem="kzR-jk-9al" secondAttribute="top" constant="8" id="yZm-Qb-hzZ"/>
+                        <constraint firstItem="LEB-uJ-kH7" firstAttribute="top" secondItem="kzR-jk-9al" secondAttribute="top" id="yZm-Qb-hzZ"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="borderView">

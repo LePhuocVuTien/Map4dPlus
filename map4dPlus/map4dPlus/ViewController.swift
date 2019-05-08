@@ -10,28 +10,33 @@ import UIKit
 import map4dsdk
 
 class ViewController: UIViewController, SearchBarDelegate {
+    
     @IBOutlet weak var searchBar: SearchBarView!
-    
-    
-    
     @IBOutlet weak var mapView: MFMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        searchBar.delegate = self;
+        searchBar.searchBarDelegate = self;
+       
         mapView.setMyLocationEnabled(true)
         mapView.enable3dMode(true)
-        print("Search bar:")
-        print(searchBar.frame)
     }
 
-    
     func onTapSearchText() {
         self.dismiss(animated: true, completion: nil)
         let storyboard = UIStoryboard(name: "SearchScreen", bundle: nil)
-        let showItemNavController = storyboard.instantiateViewController(withIdentifier: "SearchScreen") as! SearchScreenController
+        let showItemNavController = storyboard.instantiateViewController(withIdentifier: "SearchScreenController") as! SearchScreenController
         present(showItemNavController, animated: true, completion: nil)
     }
     
+    func showAlert(message: String) {
+        notActivate(message: "")
+    }
+    
+    func notActivate(message: String) {
+        let alert = UIAlertController(title: "WARNING", message: nil, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
 }
 

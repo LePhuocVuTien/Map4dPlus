@@ -10,10 +10,11 @@ import UIKit
 
 class InputSearchView: UIView {
     
-    weak var delegate: SearchDelegate?
+    weak var searchScreenDelegate: SearchScreenDelegate?
     @IBOutlet var contenView: UIView!
     @IBOutlet weak var searchText: UITextField!
     @IBOutlet weak var inputButton: UIButton!
+    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -33,6 +34,7 @@ class InputSearchView: UIView {
     }
     
     @IBAction func onBack(_ sender: Any) {
+        searchScreenDelegate?.onBack()
     }
     
     @IBAction func changeSearchText(_ sender: Any) {

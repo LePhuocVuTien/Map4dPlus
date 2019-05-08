@@ -8,18 +8,18 @@
 
 import UIKit
 
-class SearchScreenController: UIViewController {
+class SearchScreenController: UIViewController, SearchScreenDelegate {
+    
+    @IBOutlet weak var inputSeachView: InputSearchView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        inputSeachView.searchScreenDelegate = self
     }
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    
+    func onBack() {
+        dismiss(animated: true, completion: nil)
     }
-    */
-
+    
+    
 }

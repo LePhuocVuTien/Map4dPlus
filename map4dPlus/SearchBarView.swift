@@ -12,7 +12,7 @@ class SearchBarView: UIView {
    
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var inputSearchLabel: UITextField!
-    weak var delegate: SearchBarDelegate?
+    weak var searchBarDelegate: SearchBarDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -35,7 +35,14 @@ class SearchBarView: UIView {
         
     }
     
-    @objc func onTapInputSearch(sender : UITapGestureRecognizer) {
-        delegate?.onTapSearchText()
+    @IBAction func opTapMicroPhone(_ sender: Any) {
+        searchBarDelegate?.showAlert(message: "Warning")
+        
     }
+    
+    @objc func onTapInputSearch(sender : UITapGestureRecognizer) {
+        searchBarDelegate?.onTapSearchText()
+    }
+    
+   
 }

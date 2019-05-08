@@ -8,6 +8,7 @@
 
 import Foundation
 
-protocol SearchDelegate: AnyObject {
+protocol SearchScreenDelegate: AnyObject {
+    func onBack()
 }
 
